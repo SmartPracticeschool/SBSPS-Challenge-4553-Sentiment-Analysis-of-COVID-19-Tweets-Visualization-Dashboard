@@ -1,5 +1,9 @@
+{% load static %}
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 
 <head>
   <meta charset="utf-8">
@@ -7,33 +11,34 @@
   <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
   <meta name="author" content="GeeksLabs">
   <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="shortcut icon" href="{% static 'builder/img/favicon.png' %}">
 
   <title>Tweeysa! | The Advanced Twitter Sentimental Analysis Tool | </title>
 
+
   <!-- Bootstrap CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="{% static 'builder/css/bootstrap.min.css' %}" rel="stylesheet">
   <!-- bootstrap theme -->
-  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <link href="{% static 'builder/css/bootstrap-theme.css' %}" rel="stylesheet">
   <!--external css-->
   <!-- font icon -->
-  <link href="css/elegant-icons-style.css" rel="stylesheet" />
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="{% static 'builder/css/elegant-icons-style.css' %}" rel="stylesheet" />
+  <link href="{% static 'builder/css/font-awesome.min.css' %}" rel="stylesheet" />
   <!-- full calendar css-->
-  <link href="assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
-  <link href="assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
+  <link href="{% static 'builder/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css' %}" rel="stylesheet" />
+  <link href="{% static 'builder/assets/fullcalendar/fullcalendar/fullcalendar.css' %}" rel="stylesheet" />
   <!-- easy pie chart-->
-  <link href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="{% static 'builder/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css' %}" rel="stylesheet" type="text/css" media="screen" />
   <!-- owl carousel -->
-  <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
-  <link href="css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'builder/css/owl.carousel.css' %}" type="text/css">
+  <link href="{% static 'builder/css/jquery-jvectormap-1.2.2.css' %}" rel="stylesheet">
   <!-- Custom styles -->
-  <link rel="stylesheet" href="css/fullcalendar.css">
-  <link href="css/widgets.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/style-responsive.css" rel="stylesheet" />
-  <link href="css/xcharts.min.css" rel=" stylesheet">
-  <link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'builder/css/fullcalendar.css' %}">
+  <link href="{% static 'builder/css/widgets.css' %}" rel="stylesheet">
+  <link href="{% static 'builder/css/style.css' %}" rel="stylesheet">
+  <link href="{% static 'builder/css/style-responsive.css' %}" rel="stylesheet" />
+  <link href="{% static 'builder/css/xcharts.min.css' %}" rel=" stylesheet">
+  <link href="{% static 'builder/css/jquery-ui-1.10.4.min.css' %}" rel="stylesheet">
   <!-- =======================================================
     Theme Adaptation details:
     Theme Name: NiceAdmin
@@ -168,8 +173,9 @@
                 <p class="blue">You have 5 new messages</p>
               </li>
               <li>
+
                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="{% static 'builder/img/avatar-mini.jpg' %}"></span>
                                     <span class="subject">
                                     <span class="from">Greg  Martin</span>
                                     <span class="time">1 min</span>
@@ -181,7 +187,7 @@
               </li>
               <li>
                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini2.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="{% static 'builder/img/avatar-mini2.jpg' %}"></span>
                                     <span class="subject">
                                     <span class="from">Bob   Mckenzie</span>
                                     <span class="time">5 mins</span>
@@ -193,7 +199,7 @@
               </li>
               <li>
                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini3.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="{% static 'builder/img/avatar-mini3.jpg' %}"></span>
                                     <span class="subject">
                                     <span class="from">Phillip   Park</span>
                                     <span class="time">2 hrs</span>
@@ -205,7 +211,7 @@
               </li>
               <li>
                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini4.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="{% static 'builder/img/avatar-mini4.jpg' %}"></span>
                                     <span class="subject">
                                     <span class="from">Ray   Munoz</span>
                                     <span class="time">1 day</span>
@@ -262,12 +268,13 @@
               </li>
             </ul>
           </li>
+
           <!-- alert notification end-->
           <!-- user login dropdown start-->
           <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="profile-ava">
-                                <img alt="Profile Image" src="img/index.png" style="height: 40px; width:40px;">
+                                <img alt="Profile Image" src="{% static 'builder/img/index.png' %}" style="height: 40px; width:40px;">
                             </span>
                             <span class="username">Amit Kumar</span>
                             <b class="caret"></b>
@@ -409,7 +416,7 @@
                   <a href="index.html#" class="btn-close"><i class="fa fa-times"></i></a>
                 </div>
               </div>
-              <div class="flourish-embed flourish-map" data-src="story/225979"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+              <div class="flourish-embed flourish-map" data-src="story/225979"><script src="{% static 'builder/https://public.flourish.studio/resources/embed.js' %}"></script></div>
 
 
             </div>
@@ -637,40 +644,40 @@
                 <div class="padd sscroll">
 <div class="row">
   <div class="col-md-4">
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Stepping up our fight against <a href="https://twitter.com/hashtag/Covid19?src=hash&amp;ref_src=twsrc%5Etfw">#Covid19</a>, we have decided to impose Sec 144 in every district with mandatory FIR for violators. Wearing of masks in closed spaces is mandatory besides restricting marriage gatherings at 30. We must act responsibly to control the spread. <a href="https://twitter.com/hashtag/MissionFateh?src=hash&amp;ref_src=twsrc%5Etfw">#MissionFateh</a> <a href="https://t.co/pkqfFJidSh">pic.twitter.com/pkqfFJidSh</a></p>&mdash; Capt.Amarinder Singh (@capt_amarinder) <a href="https://twitter.com/capt_amarinder/status/1282653831067627520?ref_src=twsrc%5Etfw">July 13, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Stepping up our fight against <a href="https://twitter.com/hashtag/Covid19?src=hash&amp;ref_src=twsrc%5Etfw">#Covid19</a>, we have decided to impose Sec 144 in every district with mandatory FIR for violators. Wearing of masks in closed spaces is mandatory besides restricting marriage gatherings at 30. We must act responsibly to control the spread. <a href="https://twitter.com/hashtag/MissionFateh?src=hash&amp;ref_src=twsrc%5Etfw">#MissionFateh</a> <a href="https://t.co/pkqfFJidSh">pic.twitter.com/pkqfFJidSh</a></p>&mdash; Capt.Amarinder Singh (@capt_amarinder) <a href="https://twitter.com/capt_amarinder/status/1282653831067627520?ref_src=twsrc%5Etfw">July 13, 2020</a></blockquote> <script async src="{% static 'builder/https://platform.twitter.com/widgets.js' %}" charset="utf-8"></script>
   </div>
   <div class="col-md-4">
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Has <a href="https://twitter.com/hashtag/Russia?src=hash&amp;ref_src=twsrc%5Etfw">#Russia</a> turned out to be the dark horse in the race to develop the world&#39;s first successful <a href="https://twitter.com/hashtag/Covid?src=hash&amp;ref_src=twsrc%5Etfw">#Covid</a>-19 vaccine?<a href="https://twitter.com/hashtag/AFWA?src=hash&amp;ref_src=twsrc%5Etfw">#AFWA</a> <a href="https://twitter.com/hashtag/FactCheck?src=hash&amp;ref_src=twsrc%5Etfw">#FactCheck</a> <a href="https://twitter.com/hashtag/RE?src=hash&amp;ref_src=twsrc%5Etfw">#RE</a> <a href="https://t.co/jXKWv8GveL">https://t.co/jXKWv8GveL</a></p>&mdash; IndiaToday (@IndiaToday) <a href="https://twitter.com/IndiaToday/status/1282759200251285504?ref_src=twsrc%5Etfw">July 13, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Has <a href="https://twitter.com/hashtag/Russia?src=hash&amp;ref_src=twsrc%5Etfw">#Russia</a> turned out to be the dark horse in the race to develop the world&#39;s first successful <a href="https://twitter.com/hashtag/Covid?src=hash&amp;ref_src=twsrc%5Etfw">#Covid</a>-19 vaccine?<a href="https://twitter.com/hashtag/AFWA?src=hash&amp;ref_src=twsrc%5Etfw">#AFWA</a> <a href="https://twitter.com/hashtag/FactCheck?src=hash&amp;ref_src=twsrc%5Etfw">#FactCheck</a> <a href="https://twitter.com/hashtag/RE?src=hash&amp;ref_src=twsrc%5Etfw">#RE</a> <a href="https://t.co/jXKWv8GveL">https://t.co/jXKWv8GveL</a></p>&mdash; IndiaToday (@IndiaToday) <a href="https://twitter.com/IndiaToday/status/1282759200251285504?ref_src=twsrc%5Etfw">July 13, 2020</a></blockquote> <script async src="{% static 'builder/https://platform.twitter.com/widgets.js' %}" charset="utf-8"></script>
   </div>
   <div class="col-md-4">
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> Statistics in SA as at 13 July 2020. <a href="https://t.co/2xZ5Q5IKYk">pic.twitter.com/2xZ5Q5IKYk</a></p>&mdash; Dr Zweli Mkhize (@DrZweliMkhize) <a href="https://twitter.com/DrZweliMkhize/status/1282777158319067137?ref_src=twsrc%5Etfw">July 13, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+    <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> Statistics in SA as at 13 July 2020. <a href="https://t.co/2xZ5Q5IKYk">pic.twitter.com/2xZ5Q5IKYk</a></p>&mdash; Dr Zweli Mkhize (@DrZweliMkhize) <a href="https://twitter.com/DrZweliMkhize/status/1282777158319067137?ref_src=twsrc%5Etfw">July 13, 2020</a></blockquote> <script async src="{% static 'builder/https://platform.twitter.com/widgets.js' %}" charset="utf-8"></script>
 
   </div>
 </div>
 <div class="row">
   <div class="col-md-4">
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">To help slow the spread of <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a>, the following sectors must stop indoor operations effective July 13. Learn more at <a href="https://t.co/nvJN7HPEk0">https://t.co/nvJN7HPEk0</a> <a href="https://t.co/cjdaAw5czr">pic.twitter.com/cjdaAw5czr</a></p>&mdash; Los Angeles County (@CountyofLA) <a href="https://twitter.com/CountyofLA/status/1282779308432351232?ref_src=twsrc%5Etfw">July 13, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">To help slow the spread of <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a>, the following sectors must stop indoor operations effective July 13. Learn more at <a href="https://t.co/nvJN7HPEk0">https://t.co/nvJN7HPEk0</a> <a href="https://t.co/cjdaAw5czr">pic.twitter.com/cjdaAw5czr</a></p>&mdash; Los Angeles County (@CountyofLA) <a href="https://twitter.com/CountyofLA/status/1282779308432351232?ref_src=twsrc%5Etfw">July 13, 2020</a></blockquote> <script async src="{% static 'builder/https://platform.twitter.com/widgets.js' %}" charset="utf-8"></script>
 
   </div>
   <div class="col-md-4">
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I do believe that we need a two-week shutdown, at the minimum of two weeks, and I have proposed this to the Governor so we can help blunt <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> progression. <br><br>If we can not have a shut down, then at least step back to state’s Phase I. This will allow us to reset and reassess.</p>&mdash; Sylvester Turner (@SylvesterTurner) <a href="https://twitter.com/SylvesterTurner/status/1282774971916464129?ref_src=twsrc%5Etfw">July 13, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I do believe that we need a two-week shutdown, at the minimum of two weeks, and I have proposed this to the Governor so we can help blunt <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> progression. <br><br>If we can not have a shut down, then at least step back to state’s Phase I. This will allow us to reset and reassess.</p>&mdash; Sylvester Turner (@SylvesterTurner) <a href="https://twitter.com/SylvesterTurner/status/1282774971916464129?ref_src=twsrc%5Etfw">July 13, 2020</a></blockquote> <script async src="{% static 'builder/https://platform.twitter.com/widgets.js' %}" charset="utf-8"></script>
 
   </div>
   <div class="col-md-4">
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Immunity to <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> in recovered patients may only last a few months, and it could be caught again like a common cold, according to a new study <a href="https://t.co/3necxewvVL">https://t.co/3necxewvVL</a></p>&mdash; SkyNews (@SkyNews) <a href="https://twitter.com/SkyNews/status/1282770773510430721?ref_src=twsrc%5Etfw">July 13, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Immunity to <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> in recovered patients may only last a few months, and it could be caught again like a common cold, according to a new study <a href="https://t.co/3necxewvVL">https://t.co/3necxewvVL</a></p>&mdash; SkyNews (@SkyNews) <a href="https://twitter.com/SkyNews/status/1282770773510430721?ref_src=twsrc%5Etfw">July 13, 2020</a></blockquote> <script async src="{% static 'builder/https://platform.twitter.com/widgets.js' %}" charset="utf-8"></script>
   </div>
 </div>
 <div class="row">
   <div class="col-md-4">
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Stopping viral spread may mean isolating large numbers of ppl due to: &quot;the role of silent transmission as the primary driver of <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> outbreaks &amp; underscore the need for... contact tracing, detect &amp; isolate infectious indivs prior to onset of symptoms.&quot;<a href="https://t.co/o7e7bx1DCX">https://t.co/o7e7bx1DCX</a></p>&mdash; Laurie Garrett (@Laurie_Garrett) <a href="https://twitter.com/Laurie_Garrett/status/1282798977100980224?ref_src=twsrc%5Etfw">July 13, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Stopping viral spread may mean isolating large numbers of ppl due to: &quot;the role of silent transmission as the primary driver of <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> outbreaks &amp; underscore the need for... contact tracing, detect &amp; isolate infectious indivs prior to onset of symptoms.&quot;<a href="https://t.co/o7e7bx1DCX">https://t.co/o7e7bx1DCX</a></p>&mdash; Laurie Garrett (@Laurie_Garrett) <a href="https://twitter.com/Laurie_Garrett/status/1282798977100980224?ref_src=twsrc%5Etfw">July 13, 2020</a></blockquote> <script async src="{% static 'builder/https://platform.twitter.com/widgets.js' %}" charset="utf-8"></script>
 
   </div>
   <div class="col-md-4">
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Key London <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> study:<br>&quot;Blood tests revealed that while 60% of people marshalled a potent antibody resp at the height of their battle w/the virus, only 17% retained the same potency 3 mos later. Antibody levels fell as much as 23-fold over the period.&quot;<a href="https://t.co/scVKrVTATH">https://t.co/scVKrVTATH</a></p>&mdash; Laurie Garrett (@Laurie_Garrett) <a href="https://twitter.com/Laurie_Garrett/status/1282796351210872832?ref_src=twsrc%5Etfw">July 13, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Key London <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> study:<br>&quot;Blood tests revealed that while 60% of people marshalled a potent antibody resp at the height of their battle w/the virus, only 17% retained the same potency 3 mos later. Antibody levels fell as much as 23-fold over the period.&quot;<a href="https://t.co/scVKrVTATH">https://t.co/scVKrVTATH</a></p>&mdash; Laurie Garrett (@Laurie_Garrett) <a href="https://twitter.com/Laurie_Garrett/status/1282796351210872832?ref_src=twsrc%5Etfw">July 13, 2020</a></blockquote> <script async src="{% static 'builder/https://platform.twitter.com/widgets.js' %}" charset="utf-8"></script>
 
   </div>
   <div class="col-md-4">
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Out of 2463 samples tested for COVID19, 2️⃣6️⃣ people found POSITIVE<br><br>The count includes<br>West:12<br>Sepahijala:5<br>Khowai:3<br>South:2<br>Gomti:2<br>North:1<br>Dhalai:1<br><br>Also,I am happy to share that 5️⃣4️⃣ COVID19 patients have been discharged from various CCCs after their test results came NEGATIVE</p>&mdash; Biplab Kumar Deb (@BjpBiplab) <a href="https://twitter.com/BjpBiplab/status/1282717757683859457?ref_src=twsrc%5Etfw">July 13, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Out of 2463 samples tested for COVID19, 2️⃣6️⃣ people found POSITIVE<br><br>The count includes<br>West:12<br>Sepahijala:5<br>Khowai:3<br>South:2<br>Gomti:2<br>North:1<br>Dhalai:1<br><br>Also,I am happy to share that 5️⃣4️⃣ COVID19 patients have been discharged from various CCCs after their test results came NEGATIVE</p>&mdash; Biplab Kumar Deb (@BjpBiplab) <a href="https://twitter.com/BjpBiplab/status/1282717757683859457?ref_src=twsrc%5Etfw">July 13, 2020</a></blockquote> <script async src="{% static 'builder/https://platform.twitter.com/widgets.js' %}" charset="utf-8"></script>
   </div>
 </div>
                  
@@ -720,46 +727,46 @@
   <!-- container section start -->
 
   <!-- javascripts -->
-  <script src="js/jquery.js"></script>
-  <script src="js/jquery-ui-1.10.4.min.js"></script>
-  <script src="js/jquery-1.8.3.min.js"></script>
-  <script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+  <script src="{% static 'builder/js/jquery.js' %}"></script>
+  <script src="{% static 'builder/js/jquery-ui-1.10.4.min.js' %}"></script>
+  <script src="{% static 'builder/js/jquery-1.8.3.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'builder/js/jquery-ui-1.9.2.custom.min.js' %}"></script>
   <!-- bootstrap -->
-  <script src="js/bootstrap.min.js"></script>
+  <script src="{% static 'builder/js/bootstrap.min.js' %}"></script>
   <!-- nice scroll -->
-  <script src="js/jquery.scrollTo.min.js"></script>
-  <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+  <script src="{% static 'builder/js/jquery.scrollTo.min.js' %}"></script>
+  <script src="{% static 'builder/js/jquery.nicescroll.js' %}" type="text/javascript"></script>
   <!-- charts scripts -->
-  <script src="assets/jquery-knob/js/jquery.knob.js"></script>
-  <script src="js/jquery.sparkline.js" type="text/javascript"></script>
-  <script src="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
-  <script src="js/owl.carousel.js"></script>
+  <script src="{% static 'builder/assets/jquery-knob/js/jquery.knob.js' %}"></script>
+  <script src="{% static 'builder/js/jquery.sparkline.js' %}" type="text/javascript"></script>
+  <script src="{% static 'builder/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js' %}"></script>
+  <script src="{% static 'builder/js/owl.carousel.js' %}"></script>
   <!-- jQuery full calendar -->
-  <<script src="js/fullcalendar.min.js"></script>
+  <<script src="{% static 'builder/js/fullcalendar.min.js' %}"></script>
     <!-- Full Google Calendar - Calendar -->
-    <script src="assets/fullcalendar/fullcalendar/fullcalendar.js"></script>
+    <script src="{% static 'builder/assets/fullcalendar/fullcalendar/fullcalendar.js' %}"></script>
     <!--script for this page only-->
-    <script src="js/calendar-custom.js"></script>
-    <script src="js/jquery.rateit.min.js"></script>
+    <script src="{% static 'builder/js/calendar-custom.js' %}"></script>
+    <script src="{% static 'builder/js/jquery.rateit.min.js' %}"></script>
     <!-- custom select -->
-    <script src="js/jquery.customSelect.min.js"></script>
-    <script src="assets/chart-master/Chart.js"></script>
+    <script src="{% static 'builder/js/jquery.customSelect.min.js' %}"></script>
+    <script src="{% static 'builder/assets/chart-master/Chart.js' %}"></script>
 
     <!--custome script for all page-->
-    <script src="js/scripts.js"></script>
+    <script src="{% static 'builder/js/scripts.js' %}"></script>
     <!-- custom script for this page-->
-    <script src="js/sparkline-chart.js"></script>
-    <script src="js/easy-pie-chart.js"></script>
-    <script src="js/jquery-jvectormap-1.2.2.min.js"></script>
-    <script src="js/jquery-jvectormap-world-mill-en.js"></script>
-    <script src="js/xcharts.min.js"></script>
-    <script src="js/jquery.autosize.min.js"></script>
-    <script src="js/jquery.placeholder.min.js"></script>
-    <script src="js/gdp-data.js"></script>
-    <script src="js/morris.min.js"></script>
-    <script src="js/sparklines.js"></script>
-    <script src="js/charts.js"></script>
-    <script src="js/jquery.slimscroll.min.js"></script>
+    <script src="{% static 'builder/js/sparkline-chart.js' %}"></script>
+    <script src="{% static 'builder/js/easy-pie-chart.js' %}"></script>
+    <script src="{% static 'builder/js/jquery-jvectormap-1.2.2.min.js' %}"></script>
+    <script src="{% static 'builder/js/jquery-jvectormap-world-mill-en.js' %}"></script>
+    <script src="{% static 'builder/js/xcharts.min.js' %}"></script>
+    <script src="{% static 'builder/js/jquery.autosize.min.js' %}"></script>
+    <script src="{% static 'builder/js/jquery.placeholder.min.js' %}"></script>
+    <script src="{% static 'builder/js/gdp-data.js' %}"></script>
+    <script src="{% static 'builder/js/morris.min.js' %}"></script>
+    <script src="{% static 'builder/js/sparklines.js' %}"></script>
+    <script src="{% static 'builder/js/charts.js' %}"></script>
+    <script src="{% static 'builder/js/jquery.slimscroll.min.js' %}"></script>
     <script>
       //knob
       $(function() {
