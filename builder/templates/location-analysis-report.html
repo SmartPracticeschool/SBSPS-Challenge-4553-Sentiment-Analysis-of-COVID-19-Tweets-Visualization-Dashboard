@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Covid Twitter Sentiment Analysis">
+  <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
   <meta name="author" content="GeeksLabs">
   <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
   <link rel="shortcut icon" href="img/favicon.png">
 
-  <title>Tweeysa | Thank You!</title>
+  <title>Location Analysis</title>
 
   <!-- Bootstrap CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -304,6 +304,8 @@
       </div>
     </header>
     <!--header end-->
+
+    <!--sidebar start-->
     <aside>
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
@@ -335,29 +337,69 @@
       </div>
     </aside>
     <!--sidebar end-->
-    
 
     <!--main content start-->
-    <div style="padding: 10%;">
-      <div class="jumbotron text-center">
-        <h1 class="display-3">Thank You!</h1>
-        <p class="lead"><strong>Please try contacting us</strong> if you faced any trouble</p>
-        <hr>
-        <p>
-          Having trouble? <a href="contact.html">Contact us</a>
-        </p>
-        <p class="lead">
-          <a class="btn btn-primary btn-sm" href="index.html" role="button">Continue to homepage</a>
-        </p>
-      </div>
-    </div>
+    <section id="main-content">
+      <section class="wrapper">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 class="page-header"><i class="icon_genius"></i> Tools</h3>
+            <ol class="breadcrumb">
+              <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+              <li><i class="icon_genius"></i>Tools</li>
+            </ol>
+          </div>
+        </div>
         <!-- page start-->
-        
-        
+        <div className="row">
+          <div class="card" id="location-card">
+            <div class="container">
+              <h2 id="lockdown"><b>LOCATION ANALYSIS TOOL</b></h2><br>
+              <Container>
+                <Row>
+                  <h2>Location searched for: <strong>Rajabazar, Kolkata</strong></h2>
+                 
+                  <div class="row" id="report-length">
+                    <h2>Map:</h2>               
+                    <img src="img/imgmap.png" width="50%" height="170%">
+                  </div>
+                  <div class="row" id="report-length" style="margin-top: 20%;">
+                    <h2>Most Used Hashtags:</h2> 
+                    <iframe  height=100% src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSTyhIIcI2MdCeENWC4J65h9LNbAZk3QEVq6Q6AOpXSiokeVaxjyaK3df8pKSycR0njHd4CtmNjkvqP/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                  </div>
+                  <div class="row" id="report-length" style="margin-top: 10%;">
+                    <h2>Sentiment Analysis in General:</h2>
+                  <div  class="row">
+                    <div class="col-md-6" style="margin-right: 2%;">
+                      <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQY6tQ0Y4XhNmvsMV5x52a0d2pHia3fUqXQvi9hq5w6hss0Kdi4gFfjvwch7XSXSYxZyUlH-E--4fgS/pubchart?oid=22620976&amp;format=interactive"></iframe>
+                  </div>
+                  <div class="col-md-4">
+                    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQY6tQ0Y4XhNmvsMV5x52a0d2pHia3fUqXQvi9hq5w6hss0Kdi4gFfjvwch7XSXSYxZyUlH-E--4fgS/pubchart?oid=334157841&amp;format=interactive"></iframe>
+
+                  </div>
+                  </div></div>
+                  <div class="row" id="report-length" style="margin-top: 20%;">
+                    <h2>Sentiment Analysis on Covid:</h2>   
+                    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQY6tQ0Y4XhNmvsMV5x52a0d2pHia3fUqXQvi9hq5w6hss0Kdi4gFfjvwch7XSXSYxZyUlH-E--4fgS/pubchart?oid=232874815&amp;format=interactive"></iframe>
+                  </div>
+                </Row>
+              </Container>              
+            </div>
         <!-- page end-->
-      
+      </section>
+    </section>
     <!--main content end-->
-    
+    <div class="text-right">
+      <div class="credits">
+          <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version form: https://bootstrapmade.com/buy/?theme=NiceAdmin
+          -->
+       
+        </div>
+    </div>
   </section>
   <!-- container section end -->
   <!-- javascripts -->
