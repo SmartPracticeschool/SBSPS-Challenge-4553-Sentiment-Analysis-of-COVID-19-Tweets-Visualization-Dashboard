@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,21 +9,21 @@
   <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
   <meta name="author" content="GeeksLabs">
   <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="shortcut icon" href="{% static 'builder/img/favicon.png' %}">
 
   <title>Tweeysa | Login</title>
 
   <!-- Bootstrap CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="{% static 'builder/css/bootstrap.min.css' %}" rel="stylesheet">
   <!-- bootstrap theme -->
-  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <link href="{% static 'builder/css/bootstrap-theme.css' %}" rel="stylesheet">
   <!--external css-->
   <!-- font icon -->
-  <link href="css/elegant-icons-style.css" rel="stylesheet" />
-  <link href="css/font-awesome.css" rel="stylesheet" />
+  <link href="{% static 'builder/css/elegant-icons-style.css' %}" rel="stylesheet" />
+  <link href="{% static 'builder/css/font-awesome.css' %}" rel="stylesheet" />
   <!-- Custom styles -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/style-responsive.css" rel="stylesheet" />
+  <link href="{% static 'builder/css/style.css' %}" rel="stylesheet">
+  <link href="{% static 'builder/css/style-responsive.css' %}" rel="stylesheet" />
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
   <!--[if lt IE 9]>
@@ -44,7 +46,7 @@
 
 <div class="row" style="margin-bottom: 0; padding-bottom: 0;">
   <div class="col-12">
-    <center><img src="img/tweeysa.jpeg"></center>
+    <center><img src="{% static 'builder/img/tweeysa.jpeg' %}"></center>
   </div>
 </div>
 

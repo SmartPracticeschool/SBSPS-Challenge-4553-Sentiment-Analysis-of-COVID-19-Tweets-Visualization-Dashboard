@@ -20,6 +20,9 @@ def fake_info(request):
 def fake_info_prediction(request):
     return render(request,'fake-info-prediction.html')
 
+def fake_info_result(request):
+    return render(request,'fake-info-result.html')
+
 def general(request):
     return render(request,'general.html')
 
@@ -29,6 +32,9 @@ def index(request):
 def location_analysis(request):
     return render(request,'location-analysis.html')
 
+def location_analysis_report(request):
+    return render(request,'location-analysis-report.html')
+
 def login(request):
     return render(request,'login.html')
 
@@ -37,6 +43,9 @@ def profile(request):
 
 def thank_you(request):
     return render(request,'thank-you.html')
+
+def thank_you_fakeinfo(request):
+    return render(request,'thank-you-fakeinfo.html')
 
 def widgets(request):
     return render(request,'widgets.html')

@@ -1,27 +1,28 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Covid Twitter Sentiment Analysis">
+  <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
   <meta name="author" content="GeeksLabs">
   <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="shortcut icon" href="{% static 'builder/img/favicon.png' %}">
 
-  <title>Tweeysa | Thank You!</title>
+  <title>Location Analysis</title>
 
   <!-- Bootstrap CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="{% static 'builder/css/bootstrap.min.css' %}" rel="stylesheet">
   <!-- bootstrap theme -->
-  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <link href="{% static 'builder/css/bootstrap-theme.css' %}" rel="stylesheet">
   <!--external css-->
   <!-- font icon -->
-  <link href="css/elegant-icons-style.css" rel="stylesheet" />
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="{% static 'builder/css/elegant-icons-style.css' %}" rel="stylesheet" />
+  <link href="{% static 'builder/css/font-awesome.min.css' %}" rel="stylesheet" />
   <!-- Custom styles -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/style-responsive.css" rel="stylesheet" />
+  <link href="{% static 'builder/css/style.css' %}" rel="stylesheet">
+  <link href="{% static 'builder/css/style-responsive.css' %}" rel="stylesheet" />
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
   <!--[if lt IE 9]>
@@ -49,7 +50,7 @@
       </div>
 
       <!--logo start-->
-      <a href="index.html" class="logo"><strong>Tweeysa! </strong><span class="lite">| The Advanced Twitter Sentiment Analysis Application</span></a>
+      <a href="/" class="logo"><strong>Tweeysa! </strong><span class="lite">| The Advanced Twitter Sentiment Analysis Application</span></a>
       <!--logo end-->
 
       <div class="nav search-row" id="top_menu">
@@ -166,7 +167,7 @@
               </li>
               <li>
                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="{% static 'builder/img/avatar-mini.jpg' %}"></span>
                                     <span class="subject">
                                     <span class="from">Greg  Martin</span>
                                     <span class="time">1 min</span>
@@ -178,7 +179,7 @@
               </li>
               <li>
                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini2.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="{% static 'builder/img/avatar-mini2.jpg' %}"></span>
                                     <span class="subject">
                                     <span class="from">Bob   Mckenzie</span>
                                     <span class="time">5 mins</span>
@@ -190,7 +191,7 @@
               </li>
               <li>
                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini3.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="{% static 'builder/img/avatar-mini3.jpg' %}"></span>
                                     <span class="subject">
                                     <span class="from">Phillip   Park</span>
                                     <span class="time">2 hrs</span>
@@ -202,7 +203,7 @@
               </li>
               <li>
                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini4.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="{% static 'builder/img/avatar-mini4.jpg' %}"></span>
                                     <span class="subject">
                                     <span class="from">Ray   Munoz</span>
                                     <span class="time">1 day</span>
@@ -268,7 +269,7 @@
           <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="profile-ava">
-                                <img alt="Profile Image" src="img/index.png" style="height: 40px; width:40px;">
+                                <img alt="Profile Image" src="{% static 'builder/img/index.png' %}" style="height: 40px; width:40px;">
                             </span>
                             <span class="username">Amit Kumar</span>
                             <b class="caret"></b>
@@ -288,10 +289,10 @@
                 <a href="#"><i class="icon_chat_alt"></i>Report/Redressals</a>
               </li>
               <li>
-                <a href="login.html"><i class="icon_key_alt"></i> Log Out</a>
+                <a href="/login"><i class="icon_key_alt"></i> Log Out</a>
               </li>
               <li>
-                <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
+                <a href="/documentation"><i class="icon_key_alt"></i> Documentation</a>
               </li>
               <li>
               
@@ -304,12 +305,14 @@
       </div>
     </header>
     <!--header end-->
+
+    <!--sidebar start-->
     <aside>
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul class="sidebar-menu">
           <li class="active">
-            <a class="" href="index.html">
+            <a class="" href="/">
                           <i class="icon_house_alt"></i>
                           <span>Dashboard</span>
                       </a>
@@ -317,14 +320,14 @@
          
         
           <li>
-            <a class="" href="widgets.html">
+            <a class="" href="/widgets">
                           <i class="icon_genius"></i>
                           <span>Tools</span>
                       </a>
           </li>
 
           <li>
-            <a class="" href="contact.html">
+            <a class="" href="/contact">
                           <i class="fa fa-phone"></i>
                           <span>Contact Us</span>
                       </a>
@@ -335,39 +338,79 @@
       </div>
     </aside>
     <!--sidebar end-->
-    
 
     <!--main content start-->
-    <div style="padding: 10%;">
-      <div class="jumbotron text-center">
-        <h1 class="display-3">Thank You!</h1>
-        <p class="lead"><strong>Please try contacting us</strong> if you faced any trouble</p>
-        <hr>
-        <p>
-          Having trouble? <a href="contact.html">Contact us</a>
-        </p>
-        <p class="lead">
-          <a class="btn btn-primary btn-sm" href="index.html" role="button">Continue to homepage</a>
-        </p>
-      </div>
-    </div>
+    <section id="main-content">
+      <section class="wrapper">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 class="page-header"><i class="icon_genius"></i> Tools</h3>
+            <ol class="breadcrumb">
+              <li><i class="fa fa-home"></i><a href="/">Home</a></li>
+              <li><i class="icon_genius"></i>Tools</li>
+            </ol>
+          </div>
+        </div>
         <!-- page start-->
-        
-        
+        <div className="row">
+          <div class="card" id="location-card">
+            <div class="container">
+              <h2 id="lockdown"><b>LOCATION ANALYSIS TOOL</b></h2><br>
+              <Container>
+                <Row>
+                  <h2>Location searched for: <strong>Rajabazar, Kolkata</strong></h2>
+                 
+                  <div class="row" id="report-length">
+                    <h2>Map:</h2>               
+                    <img src="{% static 'builder/img/imgmap.png' %}" width="50%" height="170%">
+                  </div>
+                  <div class="row" id="report-length" style="margin-top: 20%;">
+                    <h2>Most Used Hashtags:</h2> 
+                    <iframe  height=100% src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSTyhIIcI2MdCeENWC4J65h9LNbAZk3QEVq6Q6AOpXSiokeVaxjyaK3df8pKSycR0njHd4CtmNjkvqP/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                  </div>
+                  <div class="row" id="report-length" style="margin-top: 10%;">
+                    <h2>Sentiment Analysis in General:</h2>
+                  <div  class="row">
+                    <div class="col-md-6" style="margin-right: 2%;">
+                      <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQY6tQ0Y4XhNmvsMV5x52a0d2pHia3fUqXQvi9hq5w6hss0Kdi4gFfjvwch7XSXSYxZyUlH-E--4fgS/pubchart?oid=22620976&amp;format=interactive"></iframe>
+                  </div>
+                  <div class="col-md-4">
+                    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQY6tQ0Y4XhNmvsMV5x52a0d2pHia3fUqXQvi9hq5w6hss0Kdi4gFfjvwch7XSXSYxZyUlH-E--4fgS/pubchart?oid=334157841&amp;format=interactive"></iframe>
+
+                  </div>
+                  </div></div>
+                  <div class="row" id="report-length" style="margin-top: 20%;">
+                    <h2>Sentiment Analysis on Covid:</h2>   
+                    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQY6tQ0Y4XhNmvsMV5x52a0d2pHia3fUqXQvi9hq5w6hss0Kdi4gFfjvwch7XSXSYxZyUlH-E--4fgS/pubchart?oid=232874815&amp;format=interactive"></iframe>
+                  </div>
+                </Row>
+              </Container>              
+            </div>
         <!-- page end-->
-      
+      </section>
+    </section>
     <!--main content end-->
-    
+    <div class="text-right">
+      <div class="credits">
+          <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version form: https://bootstrapmade.com/buy/?theme=NiceAdmin
+          -->
+       
+        </div>
+    </div>
   </section>
   <!-- container section end -->
   <!-- javascripts -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="{% static 'builder/js/jquery.js' %}"></script>
+  <script src="{% static 'builder/js/bootstrap.min.js' %}"></script>
   <!-- nice scroll -->
-  <script src="js/jquery.scrollTo.min.js"></script>
-  <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+  <script src="{% static 'builder/js/jquery.scrollTo.min.js' %}"></script>
+  <script src="{% static 'builder/js/jquery.nicescroll.js' %}" type="text/javascript"></script>
   <!--custome script for all page-->
-  <script src="js/scripts.js"></script>
+  <script src="{% static 'builder/js/scripts.js' %}"></script>
 
 
 </body>

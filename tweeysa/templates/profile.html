@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,21 +9,21 @@
   <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
   <meta name="author" content="GeeksLabs">
   <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="shortcut icon" href="{% static 'builder/img/favicon.png' %}">
 
   <title>Tweesya | Profile</title>
 
   <!-- Bootstrap CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="{% static 'builder/css/bootstrap.min.css' %}" rel="stylesheet">
   <!-- bootstrap theme -->
-  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <link href="{% static 'builder/css/bootstrap-theme.css' %}" rel="stylesheet">
   <!--external css-->
   <!-- font icon -->
-  <link href="css/elegant-icons-style.css" rel="stylesheet" />
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="{% static 'builder/css/elegant-icons-style.css' %}" rel="stylesheet" />
+  <link href="{% static 'builder/css/font-awesome.min.css' %}" rel="stylesheet" />
   <!-- Custom styles -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/style-responsive.css" rel="stylesheet" />
+  <link href="{% static 'builder/css/style.css' %}" rel="stylesheet">
+  <link href="{% static 'builder/css/style-responsive.css' %}" rel="stylesheet" />
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
   <!--[if lt IE 9]>
@@ -48,7 +50,7 @@
       </div>
 
       <!--logo start--><div style="height=5%">
-      <a href="index.html" class="logo"><strong>Tweeysa! </strong><span class="lite">| The Advanced Twitter Sentiment Analysis Application</span></a>
+      <a href="/" class="logo"><strong>Tweeysa! </strong><span class="lite">| The Advanced Twitter Sentiment Analysis Application</span></a>
       <!--logo end-->
 </div>
      
@@ -155,7 +157,7 @@
               </li>
               <li>
                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="{% static 'builder/img/avatar-mini.jpg' %}"></span>
                                     <span class="subject">
                                     <span class="from">Greg  Martin</span>
                                     <span class="time">1 min</span>
@@ -167,7 +169,7 @@
               </li>
               <li>
                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini2.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="{% static 'builder/img/avatar-mini2.jpg' %}"></span>
                                     <span class="subject">
                                     <span class="from">Bob   Mckenzie</span>
                                     <span class="time">5 mins</span>
@@ -179,7 +181,7 @@
               </li>
               <li>
                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini3.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="{% static 'builder/img/avatar-mini3.jpg' %}"></span>
                                     <span class="subject">
                                     <span class="from">Phillip   Park</span>
                                     <span class="time">2 hrs</span>
@@ -191,7 +193,7 @@
               </li>
               <li>
                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini4.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="{% static 'builder/img/avatar-mini4.jpg' %}"></span>
                                     <span class="subject">
                                     <span class="from">Ray   Munoz</span>
                                     <span class="time">1 day</span>
@@ -257,7 +259,7 @@
           <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="profile-ava">
-                                <img alt="" src="img/index.png" height=10% width=10%>
+                                <img alt="" src="{% static 'builder/img/index.png' %}" height=10% width=10%>
                             </span>
                             <span class="username">Amit Kumar</span>
                             <b class="caret"></b>
@@ -277,13 +279,13 @@
                 <a href="#"><i class="icon_chat_alt"></i> Chats</a>
               </li>
               <li>
-                <a href="login.html"><i class="icon_key_alt"></i> Log Out</a>
+                <a href="/login"><i class="icon_key_alt"></i> Log Out</a>
               </li>
               <li>
-                <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
+                <a href="/documentation"><i class="icon_key_alt"></i> Documentation</a>
               </li>
               <li>
-                <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
+                <a href="/documentation"><i class="icon_key_alt"></i> Documentation</a>
               </li>
             </ul>
           </li>
@@ -300,7 +302,7 @@
         <!-- sidebar menu start-->
         <ul class="sidebar-menu">
           <li class="active">
-            <a class="" href="index.html">
+            <a class="" href="/">
                           <i class="icon_house_alt"></i>
                           <span>Dashboard</span>
                       </a>
@@ -318,7 +320,7 @@
           <li class="sub-menu">
           
              
-              <li><a class="" href="contact.html"><span>Contact us</span></a></li>
+              <li><a class="" href="/contact"><span>Contact us</span></a></li>
               
              
             </ul>
@@ -337,7 +339,7 @@
           <div class="col-lg-12">
             <h3 class="page-header"><i class="fa fa-user-md"></i> Profile</h3>
             <ol class="breadcrumb">
-              <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+              <li><i class="fa fa-home"></i><a href="/">Home</a></li>
               <li><i class="icon_documents_alt"></i>Pages</li>
               <li><i class="fa fa-user-md"></i>Profile</li>
             </ol>
@@ -351,7 +353,7 @@
                 <div class="col-lg-2 col-sm-2">
                   <h4>Amit Kumar</h4>
                   <div class="follow-ava">
-                    <img src="img/index.png" alt="">
+                    <img src="{% static 'builder/img/index.png' %}" alt="">
                   </div>
                   <h6>Administrator</h6>
                 </div>
@@ -631,15 +633,15 @@
   </section>
   <!-- container section end -->
   <!-- javascripts -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="{% static 'builder/js/jquery.js' %}"></script>
+  <script src="{% static 'builder/js/bootstrap.min.js' %}"></script>
   <!-- nice scroll -->
-  <script src="js/jquery.scrollTo.min.js"></script>
-  <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+  <script src="{% static 'builder/js/jquery.scrollTo.min.js' %}"></script>
+  <script src="{% static 'builder/js/jquery.nicescroll.js' %}" type="text/javascript"></script>
   <!-- jquery knob -->
-  <script src="assets/jquery-knob/js/jquery.knob.js"></script>
+  <script src="{% static 'builder/assets/jquery-knob/js/jquery.knob.js' %}"></script>
   <!--custome script for all page-->
-  <script src="js/scripts.js"></script>
+  <script src="{% static 'builder/js/scripts.js' %}"></script>
 
   <script>
     //knob
